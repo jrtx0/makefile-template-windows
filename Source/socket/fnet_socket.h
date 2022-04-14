@@ -7,12 +7,22 @@
 #define _FNET_SOCKET_H_
 
 #include "fnet_stdlib.h"
-#include "fnet_socket_prv.h"
 
 /**************************************************************************/ /*!
  * @brief Socket descriptor.
  ******************************************************************************/
 typedef void *fnet_socket_t;
+
+/************************************************************************
+*    Structure per socket.
+*************************************************************************/
+typedef struct _fnet_socket_if_t
+{
+    struct _fnet_socket_if_t *next;
+    struct _fnet_socket_if_t *prev;
+    fnet_socket_t descriptor;
+    int data;
+} fnet_socket_if_t;
 
 /************************************************************************
 *     Function Prototypes

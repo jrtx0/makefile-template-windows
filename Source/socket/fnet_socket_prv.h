@@ -7,21 +7,13 @@
 #define _FNET_SOCKET_PRV_H_
 
 #include "fnet_stack_config.h"
+#include "fnet_socket.h"
 
 /************************************************************************
 *  Definitions.
 *************************************************************************/
 #define FNET_SOCKET_DESC_RESERVED (-1) /* The descriptor is reserved. */
 
-/************************************************************************
-*    Structure per socket.
-*************************************************************************/
-typedef struct _fnet_socket_if_t
-{
-    struct _fnet_socket_if_t *next;
-    struct _fnet_socket_if_t *prev;
-    int data;
-} fnet_socket_if_t;
 
 /************************************************************************
 *     Function Prototypes

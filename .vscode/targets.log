@@ -5,9 +5,8 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Thu Apr 14 10:16:52 2022
+# Make data base, printed on Thu Apr 14 10:35:00 2022
 
 # Variables
 
@@ -74,7 +73,7 @@ VS100COMNTOOLS = c:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\Too
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-226b8b42-4507-473c-baa6-9bbadc764fcd-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-e0eb1d67-ff2b-4dc6-8931-7f7dd1757c43-sock
 # environment
 VSCODE_CWD = D:\Codes\c
 # makefile (from 'make_settings.mk', line 37)
@@ -89,25 +88,21 @@ PATH = C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System
 RUNTIME = 0
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
-# makefile (from 'make_settings.mk', line 88)
+# makefile (from 'make_settings.mk', line 80)
 IMAGE_SRC = main
 # environment
 NIEXTCCOMPILERSUPP = C:\Program Files (x86)\National Instruments\Shared\ExternalCompilerSupport\C\
 # environment
-LC_ALL = C
-# environment
 PROCESSOR_ARCHITECTURE = AMD64
-# makefile (from 'make_settings.mk', line 62)
-PROJECT = SOCKETDLL
 # environment
 USERPROFILE = C:\Users\S0887165
 # environment
 ALLUSERSPROFILE = C:\ProgramData
-# makefile (from 'make_settings.mk', line 81)
+# makefile (from 'make_settings.mk', line 73)
 GEN_DIR = $(PROJECT_DIR)/Build/Gen
 # environment
 VSCODE_LOG_STACK = false
-# makefile (from 'make_settings.mk', line 69)
+# makefile (from 'make_settings.mk', line 61)
 APPL_SRC_DIRS = $(SRC_DIR)/main $(SRC_DIR)/socket
 # environment
 NUMBER_OF_PROCESSORS = 8
@@ -122,7 +117,7 @@ MODULES = $(APPL_SRC_DIRS)
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9996_UMKEGBGJMLKGOKTO
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_856_LKKDSXSJPUMABLPW
 # makefile (from 'Makefile', line 42)
 IMAGE = $(IMAGE_SRC)
 # makefile (from 'make_settings.mk', line 43)
@@ -150,11 +145,9 @@ PUBLIC = C:\Users\Public
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-VSCODE_CLI = 1
-# environment
 VSCODE_CODE_CACHE_PATH = C:\Users\S0887165\AppData\Roaming\Code\CachedData\dfd34e8260c270da74b5c2d86d61aee4b6d56977
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 COMMONPROGRAMFILES = C:\Program Files\Common Files
 # environment
@@ -169,8 +162,6 @@ MAKELEVEL := 0
 MAKE = make
 # default
 MAKECMDGOALS := all
-# environment
-LOCAL_GIT_DIRECTORY = C:\Users\S0887165\AppData\Local\GitHubDesktop\app-2.9.13\resources\app\git
 # makefile (from 'make_settings.mk', line 49)
 AS = $(INSTALL_DIR)/bin/as.exe
 # default
@@ -217,8 +208,8 @@ CANOE_INSTALLDIR = C:\Program Files\Vector CANoe 14__2\Exec64\
 SYSTEMROOT = C:\Windows
 # automatic
 +D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
-# makefile (from 'make_settings.mk', line 73)
-APPL_INC_DIRS = $(LIB_INC_DIR) $(SRC_DIR)/socket $(SRC_DIR)/main 
+# makefile (from 'make_settings.mk', line 65)
+APPL_INC_DIRS = $(LIB_INC_DIR) $(SRC_DIR)/main $(SRC_DIR)/socket
 # automatic
 +F = $(notdir $+)
 # environment
@@ -242,7 +233,7 @@ TOOL_DIR = $(INSTALL_DIR)/bin
 # environment
 WINDOWS_TRACING_FLAGS = 3
 # environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
+LC_ALL = C
 # makefile (from 'Makefile', line 43)
 LDLSL = $(LDLSL_APPL)
 # environment
@@ -266,11 +257,11 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-VSCODE_PID = 9996
+VSCODE_PID = 856
 # environment
 USERDOMAIN_ROAMINGPROFILE = O-FILM
 # variable set hash-table stats:
-# Load=129/1024=13%, Rehash=0, Collisions=34/193=18%
+# Load=125/1024=12%, Rehash=0, Collisions=32/189=17%
 
 # Pattern-specific Variable Values
 
@@ -278,9 +269,9 @@ USERDOMAIN_ROAMINGPROFILE = O-FILM
 
 # Directories
 
-# . (key d:/Codes/c/socketdll, mtime 1649836359): 7 files, no impossibilities.
+# . (key d:/Codes/c/socketdll, mtime 1649903211): 9 files, no impossibilities.
 
-# 7 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -405,7 +396,7 @@ checkDirs:
 # Not a target:
 make_settings.mk:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-14 09:55:09
+#  Last modified 2022-04-14 10:23:36
 #  File has been updated.
 #  Successfully updated.
 
@@ -417,12 +408,12 @@ make_settings.mk:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 19 / storage = 190 B / avg = 10 B
-# current buf: size = 8162 B / used = 190 B / count = 19 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 205 B / avg = 9 B
+# current buf: size = 8162 B / used = 205 B / count = 21 / avg = 9 B
 
-# strcache performance: lookups = 45 / hit rate = 57%
+# strcache performance: lookups = 47 / hit rate = 55%
 # hash-table stats:
-# Load=19/8192=0%, Rehash=0, Collisions=1/45=2%
-# Finished Make data base on Thu Apr 14 10:16:52 2022
+# Load=21/8192=0%, Rehash=0, Collisions=1/47=2%
+# Finished Make data base on Thu Apr 14 10:35:00 2022
 
  

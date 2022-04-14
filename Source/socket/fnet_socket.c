@@ -11,6 +11,8 @@ static fnet_socket_if_t *fnet_socket_desc[FNET_CFG_SOCKET_MAX];
 *     Function Prototypes
 *************************************************************************/
 static fnet_socket_t _fnet_socket_desc_alloc(void);
+static void _fnet_socket_desc_free(fnet_socket_t desc);
+static fnet_socket_if_t *_fnet_socket_desc_find(fnet_socket_t desc);
 static void _fnet_socket_desc_set(fnet_socket_t desc, fnet_socket_if_t *sock);
 
 /************************************************************************
@@ -48,6 +50,7 @@ void fnet_socket_release(int protocol, fnet_socket_if_t *sock)
         return FNET_NULL;
     }
 
+    _fnet_socket_desc_free(sock->descriptor);
     _fnet_socket_list_del(&prot->head, sock);
 }
 
@@ -108,9 +111,22 @@ static fnet_socket_t _fnet_socket_desc_alloc(void)
 }
 
 /************************************************************************
+* DESCRIPTION: This function looking for socket structure
+*              associated with the socket descriptor.
+*************************************************************************/
+static void _fnet_socket_desc_free(fnet_socket_t desc)
+{
+    if (desc)
+    {
+        *(fnet_prot_if_t **)desc = FNET_NULL;
+    }
+}
+
+/************************************************************************
 * DESCRIPTION: This function assigns the socket descriptor to the socket.
 *************************************************************************/
 static void _fnet_socket_desc_set(fnet_socket_t desc, fnet_socket_if_t *sock)
 {
     *(fnet_socket_if_t **)desc = sock;
+    sock->descriptor = desc;
 }

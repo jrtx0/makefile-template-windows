@@ -14,8 +14,8 @@ make.exe: *** [Makefile:97: compile] Error 255
 echo "============================================================"
 echo "            > link main.exe with  <                    "
 echo "============================================================"
-C:/Program Files/mingw64/bin/gcc.exe D:/Codes/c/socketdll/Build/Obj/fnet_prot.o D:/Codes/c/socketdll/Build/Obj/fnet_socket.o D:/Codes/c/socketdll/Build/Obj/main.o D:/Codes/c/socketdll/Build/Obj/fnet_tcp.o -o D:/Codes/c/socketdll/Build/Obj/main.exe
  
+C:/Program Files/mingw64/bin/gcc.exe D:/Codes/c/socketdll/Build/Obj/fnet_prot.o D:/Codes/c/socketdll/Build/Obj/fnet_socket.o D:/Codes/c/socketdll/Build/Obj/main.o D:/Codes/c/socketdll/Build/Obj/fnet_tcp.o -o D:/Codes/c/socketdll/Build/Obj/main.exe
 mv D:/Codes/c/socketdll/Build/Obj/main.exe D:/Codes/c/socketdll/Build/Gen/main.exe
 make.exe: Leaving directory 'd:/Codes/c/socketdll'
  
