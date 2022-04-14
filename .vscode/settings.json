@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*.C": "c",
+        "*.s": "arm",
+        "main_type.h": "c",
+        "fnet_socket.h": "c",
+        "fnet_prot.h": "c",
+        "fnet_stdlib.h": "c",
+        "fnet_socket_prv.h": "c",
+        "fnet_stack_config.h": "c"
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools"
+}
